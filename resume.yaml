@@ -1,0 +1,162 @@
+---
+name: Chris Jones
+title: DevOps Engineer
+info:
+  location: Brooklyn, NY
+  phone: 407-536-7308
+  email: chris@sysengineerchris.com
+  linkedin: https://www.linkedin.com/in/sysengineerchris
+skills:
+  AWS: 100
+  CloudFormation: 100
+  Docker: 100
+  ECS/Fargate: 80
+  Kubernetes: 60
+  Terraform: 80
+  Jenkins: 80
+  AWS CodePipeline/CodeBuilder: 100
+  AWS Lambda: 60
+  Linux: 100
+  BASH: 100
+  Python: 50
+intro:
+  - >-
+      DevOps Engineer with experience in building and maintaining enterprise
+      scale, cloud based, CI/CD driven microservice based architectures.
+  - Nearly two decades of experience with various Linux distributions.
+  - >-
+      Skilled in the setup and maintenance of highly available and redundant
+      systems.
+  - >-
+      Experienced in systems integration in order to create the best possible
+      foundation for any given project.
+  - >-
+      Experienced in working with and supporting developers in order to see
+      projects through to completion and continued development.
+  - >-
+      Very adept at researching, troubleshooting, identifying, and ultimately
+      fixing problems.
+  - Very enthusiastic about, and a contributor to open source software.
+experience:
+  - company: AiCure
+    from: 08-2019
+    to: 09-2020
+    title: DevOps Engineer
+    blurb: >-
+      DevOps engineer for AiCure, creators of a machine learning based mobile
+      app that assists patients in clinical trials.
+    accomplishments:
+      - >-
+          Overhauled AiCure's code deployment process to make it a true CI/CD
+          process
+      - >-
+          Made AiCure's existing services more resilient by implementing
+          optimizations like container autoscaling
+      - >-
+          Made use of Lambda functions to reduce cost and make management of
+          infrastructure easier to maintain
+  - company: Univision
+    from: 08-2018
+    to: 08-2019
+    title: DevOps Engineer
+    blurb: DevOps engineer for most of Univision's online presence
+    accomplishments:
+      - >-
+          Built custom tooling to automate and provide accountability for the
+          entirety of Univision's and Gizmodo Media Group's DNS infrastructure
+      - Containerized and automated of Univision's Jenkins environment
+      - Rebuilt Univision's AWS environment entirely in CloudFormation
+      - >-
+          Brought visibility to cost of operation of all Univision AWS accounts
+          via CloudHealth
+      - >-
+          Implemented CI/CD pipelines to test and automate other processes
+          wherever possible
+      - Migrated their deployments from ECS to Kubernetes
+      - >-
+          Became DevOps lead by default and rose to the increase in
+          responsibilities
+  - company: Digarc
+    from: 03-2016
+    to: 01-2018
+    title: Senior Linux Systems Engineer
+    blurb: >-
+      Administrator for high traffic college catalog websites consisting of a
+      few hundred servers. Closely worked with and supported the needs of
+      developers.
+    accomplishments:
+      - >-
+          Was made lead systems manager with and put in charge of managing a
+          team of admins
+      - Managed and improved upon their existing AWS stack
+      - Managed and improved upon their existing Chef environment
+      - Led an effort to transition to Docker containers wherever possible
+      - >-
+          Led an effort to migrate more of their legacy infrastructure to AWS
+          specific services
+      - >-
+          Automated the creation of vagrant boxes for developers via continuous
+          integration
+      - Automated various long and manual workflows
+  - company: Bookit.com
+    from: 06-2013
+    to: 10-2015
+    title: Linux Systems Engineer
+    blurb: >-
+      Administrator for high traffic travel website consisting of over 250
+      servers. Closely worked with and supported the needs of developers.
+    accomplishments:
+      - >-
+          Deployed SaltStack to configure and effortlessly manage new and
+          existing servers. This reduced new setup times for new servers to
+          half an hour.
+      - Contributed to the SaltStack project fixing bugs in the MySQL module.
+      - >-
+          Wrote a SaltStack based template system for managing thousands of
+          MySQL credentials.
+      - >-
+          Had formulas for users and grains management accepted into the public
+          SaltStack formula repository.
+      - >-
+          Reduced the time a MySQL slave rebuild takes from a whole day to a
+          few hours.
+      - Learned how to use Zabbix at a much larger scale.
+      - Learned how to work with MySQL replication.
+      - >-
+          Made developers' lives easier by managing their sandbox VMs through
+          Vagrant.
+      - >-
+          Deployed the ELK Stack (Elasticsearch, Logstash, Kibana) to greatly
+          simplify and make sense of logging data.
+      - >-
+          Facilitated the move to a virtualized environment with Red Hat
+          Enterprise Virtualization.
+      - >-
+          Set up, configured, and provided troubleshooting for a Dell
+          Compellent 80 terabyte storage array attached via multipath iSCSI. It
+          was the storage backing for the Red Hat Enterprise Virtualization.
+  - company: StackFrame, LLC
+    from: 11-2010
+    to: 06-2013
+    title: Linux System Administrator
+    blurb: >-
+      Providing IT support for DoD contractors and commercial clients with a
+      mix of Windows and Linux servers.
+    accomplishments:
+      - Set up monitoring for over 50 servers with Zabbix.
+      - >-
+          Streamlined client's in-house IT support process for 5 servers and 30
+          workstations.
+      - >-
+          Solved internal mail related problems by setting up DKIM and SPF for
+          StackFrame.
+      - Acquired Security+ certification with this employer.
+education:
+  - institution: University of Central Florida
+    from: 2002
+    to: 2004
+    degree: Bachelor's in Digital Media
+  - institution: Central Florida Community College
+    from: 2000
+    to: 2002
+    degree: Associate's Degree

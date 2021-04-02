@@ -6,71 +6,75 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <aside>
-      <header>
-        <h1>{{ name }}</h1>
-        <h2>{{ title }}</h2>
-      </header>
-      <section>
-        <h3>Personal Info</h3>
-        <h4>Location</h4>
-        <p>{{ info["location"] }}</p>
-        <h4>Phone</h4>
-        <p>{{ info["phone"] }}</p>
-        <h4>Email</h4>
-        <p><a href="mailto:{{ info["email"] }}">{{ info["email"] }}</a></p>
-        <h4>LinkedIn</h4>
-        <p><a href="{{ info["linkedin"] }}">{{ info["linkedin"] }}</a></p>
-      </section>
-      <section>
-        <h3>Skills</h3>
-        {%- for key, value in skills.items() %}
-        <p>{{ key }}</p>
-        <div>
-          <div style="width:{{ value }}%"></div>
-        </div>
-        {%- endfor %}
-      </section>
-    </aside>
-    <section>
-      <h3>About</h3>
-      <ul>
-      {%- for value in intro %}
-        <li>{{ value }}</li>
-      {%- endfor %}
-      </ul>
-    </section>
-    <section>
-      <h3>Experience</h3>
-      {%- for item in experience %}
-      <section>
-        <h4>{{ item["company"] }}</h4>
-        <aside>
-          {{ item["from"] }} - {{ item["to"] }}
-        </aside>
-        <div>
-          <p><em>{{ item["title"] }}</em></p>
-          <p>{{ item["blurb"] }}</p>
+    <div class="row">
+      <div id="info_col">
+        <header>
+          <h1>{{ name }}</h1>
+          <h2>{{ title }}</h2>
+        </header>
+        <section>
+          <h3>Personal Info</h3>
+          <h4>Location</h4>
+          <p>{{ info["location"] }}</p>
+          <h4>Phone</h4>
+          <p>{{ info["phone"] }}</p>
+          <h4>Email</h4>
+          <p><a href="mailto:{{ info["email"] }}">{{ info["email"] }}</a></p>
+          <h4>LinkedIn</h4>
+          <p><a href="{{ info["linkedin"] }}">{{ info["linkedin"] }}</a></p>
+        </section>
+        <section>
+          <h3>Skills</h3>
+          {%- for key, value in skills.items() %}
+          <p>{{ key }}</p>
+          <div>
+            <div style="width:{{ value }}%"></div>
+          </div>
+          {%- endfor %}
+        </section>
+      </div>
+      <div id="main_col">
+        <section>
+          <h3>About</h3>
           <ul>
-            {%- for value in item["accomplishments"] %}
+          {%- for value in intro %}
             <li>{{ value }}</li>
-            {%- endfor %}
+          {%- endfor %}
           </ul>
-        </div>
-      </section>
-      {%- endfor %}
-    </section>
-    <section>
-      <h3>Education</h3>
-      {%- for item in education %}
-      <section>
-        <h4>{{ item["institution"] }}</h4>
-        <aside>
-          {{ item["from"] }} - {{ item["to"] }}
-        </aside>
-        <p>{{ item["degree"] }}</p>
-      </section>
-      {%- endfor %}
-    </section>
+        </section>
+        <section>
+          <h3>Experience</h3>
+          {%- for item in experience %}
+          <div>
+            <h4>{{ item["company"] }}</h4>
+            <aside>
+              {{ item["from"] }} - {{ item["to"] }}
+            </aside>
+            <div>
+              <p><em>{{ item["title"] }}</em></p>
+              <p>{{ item["blurb"] }}</p>
+              <ul>
+                {%- for value in item["accomplishments"] %}
+                <li>{{ value }}</li>
+                {%- endfor %}
+              </ul>
+            </div>
+          </div>
+          {%- endfor %}
+        </section>
+        <section>
+          <h3>Education</h3>
+          {%- for item in education %}
+          <section>
+            <h4>{{ item["institution"] }}</h4>
+            <aside>
+              {{ item["from"] }} - {{ item["to"] }}
+            </aside>
+            <p>{{ item["degree"] }}</p>
+          </section>
+          {%- endfor %}
+        </section>
+      </div>
+    </div>
   </body>
 </html>

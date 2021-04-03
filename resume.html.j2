@@ -45,12 +45,12 @@
         <section>
           <h3>Experience</h3>
           {%- for item in experience %}
-          <div>
-            <h4>{{ item["company"] }}</h4>
-            <aside>
+          <div class="row">
+            <aside class="date_col">
               {{ item["from"] }} - {{ item["to"] }}
             </aside>
             <div>
+              <h4>{{ item["company"] }}</h4>
               <p><em>{{ item["title"] }}</em></p>
               <p>{{ item["blurb"] }}</p>
               <ul>
@@ -65,13 +65,15 @@
         <section>
           <h3>Education</h3>
           {%- for item in education %}
-          <section>
-            <h4>{{ item["institution"] }}</h4>
-            <aside>
-              {{ item["from"] }} - {{ item["to"] }}
-            </aside>
-            <p>{{ item["degree"] }}</p>
-          </section>
+          <div class="row">
+            <section>
+              <h4>{{ item["institution"] }}</h4>
+              <aside class="date_col">
+                {{ item["from"] }} - {{ item["to"] }}
+              </aside>
+              <p>{{ item["degree"] }}</p>
+            </section>
+          </div>
           {%- endfor %}
         </section>
       </div>

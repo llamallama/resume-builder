@@ -38,6 +38,25 @@ intro:
       fixing problems.
   - Very enthusiastic about, and a contributor to open source software.
 experience:
+  - company: Voice.com
+    from: 09-2020
+    to: present
+    title: DevOps Engineer
+    blurb: >-
+      DevOps engineer for Voice.com, a social network built on the EOSIO
+      blockchain.
+    accomplishments:
+      - >-
+          Managed and maintained Voice's GCP and Kubernetes environments.
+      - >-
+          Was instrumental in streamlining a massive lift-and-shift migration
+          from Block.one's infrastructure to Voice's. Migrated services
+          included multiple Kubernetes clusters, over 200 GitHub repositories,
+          PostgreSQL databases, CI/CD pipelines, and DNS records, and NPM
+          packages.
+      - >-
+          Streamlined their CloudFlare and PagerDuty accounts by managing them
+          via Terraform and buildkite.
   - company: AiCure
     from: 08-2019
     to: 09-2020
@@ -135,22 +154,6 @@ experience:
           Set up, configured, and provided troubleshooting for a Dell
           Compellent 80 terabyte storage array attached via multipath iSCSI. It
           was the storage backing for the Red Hat Enterprise Virtualization.
-  - company: StackFrame, LLC
-    from: 11-2010
-    to: 06-2013
-    title: Linux System Administrator
-    blurb: >-
-      Providing IT support for DoD contractors and commercial clients with a
-      mix of Windows and Linux servers.
-    accomplishments:
-      - Set up monitoring for over 50 servers with Zabbix.
-      - >-
-          Streamlined client's in-house IT support process for 5 servers and 30
-          workstations.
-      - >-
-          Solved internal mail related problems by setting up DKIM and SPF for
-          StackFrame.
-      - Acquired Security+ certification with this employer.
 education:
   - institution: University of Central Florida
     from: 2002

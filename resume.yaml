@@ -8,17 +8,18 @@ info:
   linkedin: https://linkedin.com/in/sysengineerchris
 skills:
   AWS: 100
+  GCP: 40
   CloudFormation: 100
   Docker: 100
   ECS/Fargate: 80
   Kubernetes: 60
   Terraform: 80
-  Jenkins: 80
-  AWS CodePipeline/CodeBuilder: 100
+  CI/CD: 80
   AWS Lambda: 60
   Linux: 100
   BASH: 100
   Python: 50
+  JavaScript: 50
 intro:
   - >-
       DevOps Engineer with experience in building and maintaining enterprise

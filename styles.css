@@ -12,8 +12,9 @@ h2 {
   font-weight: normal;
 }
 
-h1, h2, h3, h4, p {
-  margin: 10px 20px;
+
+ul li {
+  margin-bottom: 5px;
 }
 
 #info_col {
@@ -22,10 +23,26 @@ h1, h2, h3, h4, p {
   flex: 30%;
 }
 
+#info_col h1,
+#info_col h2,
+#info_col h3,
+#info_col h4,
+#info_col p {
+  margin: 10px 20px;
+}
+
 #info_col h3 {
   background-color: #232323;
   margin: 0;
   padding: 10px 20px;
+}
+
+#info_col h4 {
+  margin-top: 20px;
+}
+
+#main_col section {
+  padding: 0 15px;
 }
 
 #main_col h3 {
@@ -42,6 +59,11 @@ h1, h2, h3, h4, p {
   margin: 10px 0;
 }
 
+#skills p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 .date_col {
   flex: 20%;
   margin-left:20px;
@@ -49,4 +71,27 @@ h1, h2, h3, h4, p {
 
 .row {
   display: flex;
+  justify-content: flex-start;
+}
+
+.row > div {
+  width: 90%;
+}
+
+.skill_bar {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+.skill_bg {
+  background-color: #232323;
+  box-sizing: border-box;
+  height: 10px;
+  width: 100%;
+}
+
+.skill_fg {
+  background-color: white;
+  height:10px;
 }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8"/>
     <title>{{ name }} - {{ title }}</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/home/chris/repos/resumebuilder/styles.css">
   </head>
   <body>
     <div class="row">
@@ -23,12 +23,14 @@
           <h4>LinkedIn</h4>
           <p><a href="{{ info["linkedin"] }}">{{ info["linkedin"] }}</a></p>
         </section>
-        <section>
+        <section id="skills">
           <h3>Skills</h3>
           {%- for key, value in skills.items() %}
           <p>{{ key }}</p>
-          <div>
-            <div style="width:{{ value }}%"></div>
+          <div class="skill_bar">
+            <div class="skill_bg">
+              <div class="skill_fg" style="width:{{ value }}%"></div>
+            </div>
           </div>
           {%- endfor %}
         </section>
@@ -47,7 +49,8 @@
           {%- for item in experience %}
           <div class="row">
             <aside class="date_col">
-              {{ item["from"] }} - {{ item["to"] }}
+              <p>{{ item["from"] }} - </p>
+              <p>{{ item["to"] }}</p>
             </aside>
             <div>
               <h4>{{ item["company"] }}</h4>
@@ -66,13 +69,14 @@
           <h3>Education</h3>
           {%- for item in education %}
           <div class="row">
-            <section>
+            <aside class="date_col">
+              <p>{{ item["from"] }} - </p>
+              <p>{{ item["to"] }}</p>
+            </aside>
+            <div>
               <h4>{{ item["institution"] }}</h4>
-              <aside class="date_col">
-                {{ item["from"] }} - {{ item["to"] }}
-              </aside>
               <p>{{ item["degree"] }}</p>
-            </section>
+            </div>
           </div>
           {%- endfor %}
         </section>

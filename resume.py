@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 import yaml
+import pdfkit
 from jinja2 import Environment, FileSystemLoader
 from math import floor
 
@@ -21,10 +22,23 @@ with open(r'resume.yaml') as file:
     experience = resume["experience"]
     education = resume["education"]
 
-    print(template.render(name = name,
-                          title = title,
-                          info = info,
-                          skills = skills,
-                          intro = intro,
-                          experience = experience,
-                          education = education))
+    html = template.render(name = name,
+                           title = title,
+                           info = info,
+                           skills = skills,
+                           intro = intro,
+                           experience = experience,
+                           education = education)
+
+    options = {
+      "enable-local-file-access": None,
+      "dpi": 200,
+      "page-size": "Letter",
+      "margin-top": "0",
+      "margin-right": "0",
+      "margin-bottom": "0",
+      "margin-left": "0",
+      "encoding": "UTF-8"
+    }
+
+    pdfkit.from_string(html, "resume.pdf", options=options)

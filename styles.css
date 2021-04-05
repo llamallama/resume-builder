@@ -1,7 +1,12 @@
-body {
+body, html {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  height: 2748px;
+}
+
+body > .row {
+  height: 100%;
 }
 
 a, a:visited {
@@ -21,6 +26,7 @@ ul li {
   background-color: #343434;
   color: #fff;
   flex: 30%;
+  height: 100%;
 }
 
 #info_col h1,

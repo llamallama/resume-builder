@@ -32,7 +32,6 @@ with open(r'resume.yaml') as file:
 
     options = {
       "enable-local-file-access": None,
-      "dpi": 200,
       "page-size": "Letter",
       "margin-top": "0",
       "margin-right": "0",

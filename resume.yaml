@@ -12,7 +12,8 @@ skills:
   CloudFormation: 100
   Docker: 100
   ECS/Fargate: 80
-  Kubernetes: 60
+  Kubernetes: 70
+  Helm: 50
   Terraform: 80
   CI/CD: 80
   AWS Lambda: 60
@@ -47,8 +48,10 @@ experience:
       DevOps engineer for Voice.com, a social network built on the EOSIO
       blockchain.
     accomplishments:
+      - Managed and maintained Voice's GCP and Kubernetes environments.
       - >-
-          Managed and maintained Voice's GCP and Kubernetes environments.
+          Became familiar with blockchain technology. Specifically the EOSIO
+          blockchain framework.
       - >-
           Was instrumental in streamlining a massive lift-and-shift migration
           from Block.one's infrastructure to Voice's. Migrated services
@@ -58,6 +61,9 @@ experience:
       - >-
           Streamlined their CloudFlare and PagerDuty accounts by managing them
           via Terraform and buildkite.
+      - >-
+          Became their go-to resource for tricky Terraform and Bash related
+          issues.
   - company: AiCure
     from: 08-2019
     to: 09-2020

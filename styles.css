@@ -65,6 +65,11 @@ ul li {
   margin: 10px 0;
 }
 
+#main_col .from,
+#main_col .to {
+  margin: 0;
+}
+
 #skills p {
   margin-top: 15px;
   margin-bottom: 15px;

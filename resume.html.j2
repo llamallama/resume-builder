@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8"/>
     <title>{{ name }} - {{ title }}</title>
-    <link rel="stylesheet" href="/home/chris/repos/resumebuilder/styles.css">
+    <link rel="stylesheet" href="/home/chris/repos/resume-builder/styles.css">
   </head>
   <body>
     <div class="row">
@@ -47,10 +47,10 @@
         <section>
           <h3>Experience</h3>
           {%- for item in experience %}
-          <div class="row">
+          <div class="row" id="{{ item["company"].lower()|replace(" ","_")|replace(".","_") }}">
             <aside class="date_col">
-              <p>{{ item["from"] }} - </p>
-              <p>{{ item["to"] }}</p>
+              <p class="from">{{ item["from"] }} - </p>
+              <p class="to">{{ item["to"] }}</p>
             </aside>
             <div>
               <h4>{{ item["company"] }}</h4>
@@ -70,8 +70,8 @@
           {%- for item in education %}
           <div class="row">
             <aside class="date_col">
-              <p>{{ item["from"] }} - </p>
-              <p>{{ item["to"] }}</p>
+              <p class="from">{{ item["from"] }} - </p>
+              <p class="to">{{ item["to"] }}</p>
             </aside>
             <div>
               <h4>{{ item["institution"] }}</h4>

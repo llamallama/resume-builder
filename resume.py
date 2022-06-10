@@ -40,4 +40,7 @@ with open(r'resume.yaml') as file:
       "encoding": "UTF-8"
     }
 
+    with open('resume.html', 'w') as f:
+        f.write(html)
+
     pdfkit.from_string(html, "resume.pdf", options=options)

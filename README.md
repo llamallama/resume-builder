@@ -7,4 +7,4 @@
 
 ## Usage
 * Update resume.yaml
-* rum `./resume.py`
+* Run `./resume.py`

@@ -1,140 +1,107 @@
 ---
 name: Chris Jones
-title: DevOps Engineer
+title: Principal Architect
 info:
   location: Brooklyn, NY
   phone: 407-536-7308
-  email: chrisjone@gmail.com
-  linkedin: https://linkedin.com/in/sysengineerchris
+  email: chris.jones@pipetogrep.org
+  linkedin: https://linkedin.com/in/pipetogrep
 skills:
   AWS: 100
   GCP: 40
   CloudFormation: 100
+  Terraform: 100
   Docker: 100
-  ECS/Fargate: 80
-  Kubernetes: 70
-  Helm: 50
-  Terraform: 80
+  ECS/Fargate: 90
+  Kubernetes: 90
+  Helm: 80
   CI/CD: 80
   AWS Lambda: 60
   Linux: 100
   BASH: 100
   Python: 50
   JavaScript: 50
+  Jamf: 100
+  Kandji: 100
+  Microsoft Intune: 80
 intro:
-  - >-
-      DevOps Engineer with experience in building and maintaining enterprise
-      scale, cloud based, CI/CD driven microservice based architectures.
-  - Nearly two decades of experience with various Linux distributions.
-  - >-
-      Skilled in the setup and maintenance of highly available and redundant
-      systems.
-  - >-
-      Experienced in systems integration in order to create the best possible
-      foundation for any given project.
-  - >-
-      Experienced in working with and supporting developers in order to see
-      projects through to completion and continued development.
-  - >-
-      Very adept at researching, troubleshooting, identifying, and ultimately
-      fixing problems.
+  - Principal Architect with background in multiple overlapping careers spanning over 20 years.
+  - Has extensive experience in building and maintaining enterprise scale cloud based CI/CD driven microservice based architectures.
+  - Decades of experience with various Linux distributions.
+  - Skilled in the setup and maintenance of highly available and redundant systems.
+  - Experienced in systems integration in order to create the best possible foundation for any given project.
+  - Experienced in working with and supporting developers in order to see projects through to completion and continued development.
+  - Very adept at researching, troubleshooting, identifying, and ultimately fixing problems.
 experience:
   - company: Quartet Health
     from: 05-2021
     to: present
-    title: DevOps Engineer
-    blurb: >-
-      DevOps engineer for Quartet Health, a company that tries to make getting access to mental health care easier.
+    title: Principal Architect
+    blurb: Quartet Health is a company that tries to make getting access to mental health care easier. I started as a DevOps engineer but grew into the role of Principal Architect. That role had be involved in DevOps, systems architecture, IT, and security.
     accomplishments:
-      - Managed and maintained Quartet Health's AWS and Kubernetes environments.
-      - Migrated Quartet's services to EKS. They were previously hosted directly on EC2.
-      - Migrated multiple applications from being hosted on EC2 to running on EKS.
-      - Implemented ArgoCD for deploying applications to EKS.
+      - Managed and maintained Quartet Health's diverse AWS and Kubernetes environments.
+      - Migrated Quartet's services to EKS that were previously hosted directly on EC2.
+      - Migrated Quartet's services from EKS to Fargate upon realizing that Kubernetes was a bad choice for their infrastructure.
       - Implemented Atlantis for handling Terraform via GitOps.
-      - Created a custom built VPN solution around OpenVPN CE and OneLogin. The result significantly reduced the complexity and cost of the company's VPN setup.
+      - Created a custom built VPN solution around OpenVPN CE and OneLogin, then later Okta. The result significantly reduced the complexity and cost of the company's VPN setup.
+      - Fully built and automated an Informatica environment via Terraform.
+      - Significantly reduced Quartet's AWS costs.
+      - Nurtured and maintained a healthy DevOps based culture that allowed the dev and infra teams to work well together.
+      - Worked hand-in-hand with the security team to ensure HIPAA and SOC2 compliance for our entire infrastructure.
+      - Maintained a remote IT support fleet for over 400 remote workers.
+      - Took over and rebuilt the IT support department. Discovered and shut down a laptop theft ring within the company.
+      - Migrated the IT Support team's Apple MDM solution from Jamf to Kandji.
+      - Migrated the IT Support teams's Windows MDM solution from ConnectWise to Microsoft Intune.
+      - Significantly improved the IT department's overall security posture by fully automating updates for all user control machines.
+      - Implemented Okta as the company's new SSO platform.
+      - Taught and mentored in the ways for DevOps, systems engineering, security, and IT management. Quartet truly utilized all of my abilities. 
+      - Optimized the entire IT support workflow from users requesting help with issues to those problems getting solved into a faster and more efficient workflow.
+      - Deployed company device asset tracking where we previously had none.
   - company: Voice.com
     from: 09-2020
     to: 05-2021
     title: DevOps Engineer
-    blurb: >-
-      DevOps engineer for Voice.com, a social network built on the EOSIO
-      blockchain.
+    blurb: DevOps engineer for Voice.com, a social network built on the EOSIO blockchain.
     accomplishments:
       - Managed and maintained Voice's GCP and Kubernetes environments.
-      - >-
-          Became familiar with blockchain technology. Specifically the EOSIO
-          blockchain framework.
-      - >-
-          Was instrumental in streamlining a massive lift-and-shift migration
-          from Block.one's infrastructure to Voice's. Migrated services
-          included multiple Kubernetes clusters, over 200 GitHub repositories,
-          PostgreSQL databases, CI/CD pipelines, and DNS records, and NPM
-          packages.
-      - >-
-          Streamlined their CloudFlare and PagerDuty accounts by managing them
-          via Terraform and buildkite.
-      - >-
-          Became their go-to resource for tricky Terraform and Bash related
-          issues.
+      - Became familiar with blockchain technology. Specifically the EOSIO blockchain framework.
+      - Was instrumental in streamlining a massive lift-and-shift migration from Block.one's infrastructure to Voice's. Migrated services included multiple Kubernetes clusters, over 200 GitHub repositories, PostgreSQL databases, CI/CD pipelines, and DNS records, and NPM packages.
+      - Streamlined their CloudFlare and PagerDuty accounts by managing them via Terraform and buildkite.
+      - Became their go-to resource for tricky Terraform and Bash related issues.
   - company: AiCure
     from: 08-2019
     to: 09-2020
     title: DevOps Engineer
-    blurb: >-
-      DevOps engineer for AiCure, creators of a machine learning based mobile
-      app that assists patients in clinical trials.
+    blurb: DevOps engineer for AiCure, creators of a machine learning based mobile app that assists patients in clinical trials.
     accomplishments:
-      - >-
-          Overhauled AiCure's code deployment process to make it a true CI/CD
-          process
-      - >-
-          Made AiCure's existing services more resilient by implementing
-          optimizations like container autoscaling
-      - >-
-          Made use of Lambda functions to reduce cost and make management of
-          infrastructure easier to maintain
+      - Overhauled AiCure's code deployment process to make it a true CI/CD process
+      - Made AiCure's existing services more resilient by implementing optimizations like container autoscaling
+      - Made use of Lambda functions to reduce cost and make management of infrastructure easier to maintain
   - company: Univision
     from: 08-2018
     to: 08-2019
     title: DevOps Engineer
     blurb: DevOps engineer for most of Univision's online presence
     accomplishments:
-      - >-
-          Built custom tooling to automate and provide accountability for the
-          entirety of Univision's and Gizmodo Media Group's DNS infrastructure
+      - Built custom tooling to automate and provide accountability for the entirety of Univision's and Gizmodo Media Group's DNS infrastructure
       - Containerized and automated of Univision's Jenkins environment
       - Rebuilt Univision's AWS environment entirely in CloudFormation
-      - >-
-          Brought visibility to cost of operation of all Univision AWS accounts
-          via CloudHealth
-      - >-
-          Implemented CI/CD pipelines to test and automate other processes
-          wherever possible
+      - Brought visibility to cost of operation of all Univision AWS accounts via CloudHealth
+      - Implemented CI/CD pipelines to test and automate other processes wherever possible
       - Migrated their deployments from ECS to Kubernetes
-      - >-
-          Became DevOps lead by default and rose to the increase in
-          responsibilities
+      - Became DevOps lead by default and rose to the increase in responsibilities
   - company: Digarc
     from: 03-2016
     to: 01-2018
     title: Senior Linux Systems Engineer
-    blurb: >-
-      Administrator for high traffic college catalog websites consisting of a
-      few hundred servers. Closely worked with and supported the needs of
-      developers.
+    blurb: Administrator for high traffic college catalog websites consisting of a few hundred servers. Closely worked with and supported the needs of developers.
     accomplishments:
-      - >-
-          Was made lead systems manager with and put in charge of managing a
-          team of admins
+      - Was made lead systems manager with and put in charge of managing a team of admins
       - Managed and improved upon their existing AWS stack
       - Managed and improved upon their existing Chef environment
       - Led an effort to transition to Docker containers wherever possible
-      - >-
-          Led an effort to migrate more of their legacy infrastructure to AWS
-          specific services
-      - >-
-          Automated the creation of vagrant boxes for developers via continuous
-          integration
+      - Led an effort to migrate more of their legacy infrastructure to AWS specific services
+      - Automated the creation of vagrant boxes for developers via continuous integration
       - Automated various long and manual workflows
 education:
   - institution: University of Central Florida

@@ -2,7 +2,7 @@ body, html {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  height: 2748px;
+  background-color: white;
 }
 
 body > .row {
@@ -10,7 +10,7 @@ body > .row {
 }
 
 a, a:visited {
-  color: white;
+  color: #232323;
 }
 
 h2 {
@@ -23,8 +23,6 @@ ul li {
 }
 
 #info_col {
-  background-color: #343434;
-  color: #fff;
   flex: 30%;
   height: 100%;
 }
@@ -38,15 +36,18 @@ ul li {
 }
 
 #info_col h3 {
-  background-color: #232323;
-  margin: 0;
-  padding: 10px 20px;
+  border-top: 1px solid #d6d6d6;
+  border-bottom: 1px solid #d6d6d6;
+  padding: 10px 0px;
 }
 
 #info_col h4 {
   margin-top: 20px;
 }
 
+#main_col {
+  border-left: 1px solid #d6d6d6;
+}
 #main_col section {
   padding: 0 15px;
 }
@@ -96,13 +97,13 @@ ul li {
 }
 
 .skill_bg {
-  background-color: #232323;
+  /* background-color: #232323; */
   box-sizing: border-box;
   height: 10px;
   width: 100%;
 }
 
 .skill_fg {
-  background-color: white;
+  background-color: black;
   height:10px;
 }

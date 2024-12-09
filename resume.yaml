@@ -7,6 +7,7 @@ info:
   email: chris.jones@pipetogrep.org
   linkedin: https://linkedin.com/in/pipetogrep
 skills:
+  Linux: 100
   AWS: 100
   GCP: 40
   CloudFormation: 100
@@ -14,20 +15,22 @@ skills:
   Docker: 100
   ECS/Fargate: 90
   Kubernetes: 90
-  Helm: 80
+  Helm: 90
   CI/CD: 80
   AWS Lambda: 60
-  Linux: 100
   BASH: 100
   Python: 50
   JavaScript: 50
+  PowerShell: 20
   Jamf: 100
   Kandji: 100
+  Google Workspace: 100
   Microsoft Intune: 80
 intro:
-  - Principal Architect with background in multiple overlapping careers spanning over 20 years.
-  - Has extensive experience in building and maintaining enterprise scale cloud based CI/CD driven microservice based architectures.
-  - Decades of experience with various Linux distributions.
+  - Principal Architect with background in multiple overlapping careers including systems engineering, DevOps Engineering, and IT Support management.
+  - Has extensive experience in building and maintaining enterprise scale on-prem and cloud environments.
+  - Has extensive experience in building CI/CD driven microservice based architectures.
+  - Has extensive experience with many Linux distributions.
   - Skilled in the setup and maintenance of highly available and redundant systems.
   - Experienced in systems integration in order to create the best possible foundation for any given project.
   - Experienced in working with and supporting developers in order to see projects through to completion and continued development.
@@ -37,26 +40,33 @@ experience:
     from: 05-2021
     to: present
     title: Principal Architect
-    blurb: Quartet Health is a company that tries to make getting access to mental health care easier. I started as a DevOps engineer but grew into the role of Principal Architect. That role had be involved in DevOps, systems architecture, IT, and security.
+    blurb: Quartet Health is a company that tries to make getting access to mental health care easier. I started as a DevOps engineer but grew into the role of Principal Architect. That role had me involved in DevOps, systems engineering and administration, IT, and security.
     accomplishments:
-      - Managed and maintained Quartet Health's diverse AWS and Kubernetes environments.
+      - Managed and maintained Quartet Health's diverse AWS and containerized (Fargate and Kubernetes) environments.
       - Migrated Quartet's services to EKS that were previously hosted directly on EC2.
       - Migrated Quartet's services from EKS to Fargate upon realizing that Kubernetes was a bad choice for their infrastructure.
+      - Migrated Quartet's aged self-hosted SFTP server setup from a single server to AWS Transfer Family. This resulted in an increase in security for our clients and a reduction in maintenance complexity.
       - Implemented Atlantis for handling Terraform via GitOps.
       - Created a custom built VPN solution around OpenVPN CE and OneLogin, then later Okta. The result significantly reduced the complexity and cost of the company's VPN setup.
       - Fully built and automated an Informatica environment via Terraform.
+      - Provided guidance and mentorship for all engineers on best practices regarding AWS, CI/CD methodoligies
       - Significantly reduced Quartet's AWS costs.
       - Nurtured and maintained a healthy DevOps based culture that allowed the dev and infra teams to work well together.
       - Worked hand-in-hand with the security team to ensure HIPAA and SOC2 compliance for our entire infrastructure.
+      - Deployed Darktrace across our entire IT infrastructure (Cloud and individual laptops) for security monitoring purposes.
+      - Deployed Rapid7 across our entire IT infrastructure (Cloud and individual laptops) for security monitoring purposes.
       - Maintained a remote IT support fleet for over 400 remote workers.
       - Took over and rebuilt the IT support department. Discovered and shut down a laptop theft ring within the company.
       - Migrated the IT Support team's Apple MDM solution from Jamf to Kandji.
       - Migrated the IT Support teams's Windows MDM solution from ConnectWise to Microsoft Intune.
+      - Managed Quartet's Google Workspace environment.
+      - Managed Quartet's O365 environment after the migration from Google Workspace.
+      - Managed and maintained Quartet's self-hosted Github Enterprise Environment.
       - Significantly improved the IT department's overall security posture by fully automating updates for all user control machines.
       - Implemented Okta as the company's new SSO platform.
       - Taught and mentored in the ways for DevOps, systems engineering, security, and IT management. Quartet truly utilized all of my abilities. 
       - Optimized the entire IT support workflow from users requesting help with issues to those problems getting solved into a faster and more efficient workflow.
-      - Deployed company device asset tracking where we previously had none.
+      - Deployed company device asset tracking where they previously had none.
   - company: Voice.com
     from: 09-2020
     to: 05-2021
@@ -105,10 +115,6 @@ experience:
       - Automated various long and manual workflows
 education:
   - institution: University of Central Florida
-    from: 2002
-    to: 2004
     degree: Bachelor's in Digital Media
   - institution: Central Florida Community College
-    from: 2000
-    to: 2002
     degree: Associate's Degree

@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8"/>
     <title>{{ name }} - {{ title }}</title>
-    <link rel="stylesheet" href="/home/chris/repos/resume-builder/styles.css">
+    {%- for item in cssFiles %}
+      <link rel="stylesheet" href={{ item }}>
+    {%- endfor %}
   </head>
   <body>
     <div class="row">

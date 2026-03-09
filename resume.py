@@ -2,10 +2,10 @@
 
 import sys
 import yaml
+import pdfkit
 from jinja2 import Environment, FileSystemLoader
+from math import floor
 from os import listdir
-from pathlib import Path
-from playwright.sync_api import sync_playwright
 
 env = Environment(
     loader=FileSystemLoader('./'),
@@ -17,20 +17,9 @@ if len(sys.argv) > 1:
 else:
     resume_yaml = "resume.yaml"
 
-
-if len(sys.argv) > 1:
-    resume_yaml = sys.argv[1]
-else:
-    resume_yaml = "resume.yaml"
-
-# What is yaml?
-# print(yaml)
-
-# cssFiles = []
-# for css in listdir("./styles"):
-#     cssFiles.append("./styles/" + css)
-
-css = './styles/styles.css'
+cssFiles = []
+for css in listdir("./styles"):
+    cssFiles.append("./styles/" + css)
 
 with open(resume_yaml, 'r') as file:
     resume = yaml.load(file, Loader=yaml.FullLoader)
@@ -52,7 +41,9 @@ with open(resume_yaml, 'r') as file:
                            intro = intro,
                            experience = experience,
                            education = education,
-                           css=css)
+                           cssFiles = cssFiles,
+                           certifications = certifications,
+                           honors = honors)
 
     options = {
       "enable-local-file-access": None,
@@ -67,15 +58,4 @@ with open(resume_yaml, 'r') as file:
     with open('resume.html', 'w') as f:
         f.write(html)
 
-def generate_pdf(output_pdf):
-    with sync_playwright() as p:
-        browser = p.chromium.launch()
-        page = browser.new_page()
-        page.goto(Path('resume.html').absolute().as_uri())
-        page.add_style_tag(path='./styles/styles.css')
-        page.emulate_media(media="screen")
-        # page.pdf(path=output_pdf, format='Letter', print_background=True)
-        page.pdf(path=output_pdf, format='Letter', print_background=True, margin={'top': '8px', 'bottom': '8px', 'left': '8px', 'right': '8px'})
-        browser.close()
-
-generate_pdf('resume.pdf')
+    pdfkit.from_string(html, "resume.pdf", options=options, css=cssFiles)

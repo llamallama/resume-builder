@@ -1,3 +1,8 @@
-pyyaml
-jinja2
-pdfkit
+greenlet==3.1.1
+Jinja2==3.1.5
+MarkupSafe==3.0.2
+pathlib==1.0.1
+playwright==1.50.0
+pyee==12.1.1
+PyYAML==6.0.2
+typing_extensions==4.12.2

@@ -1,29 +1,28 @@
 ---
 name: Chris Jones
-title: Principal Architect<br>DevOps Engineer<br>Systems Engineer
+title: DevOps Engineer<br>Systems Reliability Engineer
 info:
-  location: Brooklyn, NY
+  location: Morrisville, VT
   phone: 407-536-7308
   email: chris.jones@pipetogrep.org
   linkedin: https://linkedin.com/in/pipetogrep
 skills:
   Linux: 100
   macOS: 100
-  Windows: 70
   AWS: 100
-  GCP: 40
   CloudFormation: 100
   Terraform: 100
+  CDK: 80
   Docker: 100
   ECS/Fargate: 90
   Kubernetes: 90
   Helm: 90
-  CI/CD: 80
-  AWS Lambda: 60
+  CI/CD: 90
+  AWS Lambda: 70
   BASH: 100
   Python: 60
+  TypeScript: 60
   JavaScript: 50
-  PowerShell: 20
   Jamf: 100
   Kandji: 100
   Microsoft Intune: 80
@@ -31,59 +30,56 @@ skills:
   Google Workspace: 100
 
 intro:
-  Principal Architect:
-  - Experienced Principal Architect capable of leading the design an implementation of complex on-prem and cloud based systems.
-  - Possesses an extensive background in multiple overlapping careers including systems engineering, DevOps Engineering, Systems Engineering, and IT Support management.
-  - Possesses strong leadership and mentorship skills and can provide a culture of excellence and continuous improvement.
-  - Has excellent communication skills with both technical and non-technical stakeholders.
-  - In-depth knowledge of software design patterns, architectural styles (e.g., microservices, event-driven, serverless architecture, various CI/CD tools), and other emerging technologies
-  DevOps and Platform Engineer:
-  - Expert in building CI/CD driven microservice based architectures.
-  - Experienced in systems integration in order to create the best possible foundation for any given project.
-  - Experienced in working with and supporting developers in order to see projects through to completion and continued development.
-  - Adept at creating and implementing tooling for developers to guarantee that they have the smoothest path from coding to production deployment.
-  Systems Engineer:
-  - Has extensive experience in building and maintaining enterprise scale on-prem and cloud environments.
-  - Highly experienced with many Linux distributions.
-  - Skilled in the setup and maintenance of highly available and redundant systems.
-  IT Support Manager:
-  - Has experience at managing, supporting, and optimizing IT departments to operate at peak efficiency.
-  - Very experienced in desktop environments for all major operating systems macOS, iOS, Windows, and Linux.
-  - Well versed in Jamf, Kandji, Microsoft Intune, and Connectwise.
-  - Brings an engineering mindset to IT support that allows for better troubleshooting and problem solving.
+  DevOps and SRE:
+  - Senior DevOps and systems reliability engineer with a track record of owning complex infrastructure end-to-end across cloud, security, and compliance.
+  - Equally comfortable writing code, architecting systems, and getting into the weeds of a production incident.
+  - Has operated as the sole infrastructure owner at a fintech startup and as a principal-level engineer at a healthcare company, wearing every hat the role demands.
+  - Brings an engineering mindset to every problem, whether it's a broken pipeline, a security gap, or an IT department that needs fixing.
 experience:
+  - company: Sunbound Homes
+    from: 08-2025
+    to: present
+    title: Senior Systems Reliability Engineer
+    blurb: Sunbound is a fintech startup modernizing payments and claims management for senior living operators. Functioning as the sole infrastructure engineer, all SRE, DevOps, security, and compliance work was owned and executed independently.
+    accomplishments:
+      - Deployed an SSM-based MySQL proxy replacing open, world-accessible database connections with IAM-authenticated access.
+      - Improved CI/CD pipeline performance and reliability across the board.
+      - Built a server software version tracking database with EOL dates across the entire stack and volunteered to upgrade the payments system to Node 24 LTS, handling everything from testing to production deployment.
+      - Identified that the payments system password security was using far too few hashing iterations, proved it was a security risk, and shipped the fix myself.
+      - Designed and implemented a tag-based, forward-only deployment process with immutable snapshots to replace a release branch/cherry-pick model causing environment drift.
+      - Migrated all RDS databases out of public subnets and into private subnets.
+      - Enabled encryption at rest on all RDS databases across all environments.
+      - Removed static AWS credentials from environment files, CI/CD variables, and EC2 instances, replacing them with IAM roles and instance profiles.
+      - Hardened the Google Workspace admin account model with dedicated isolated admin accounts, 2FA enforced org-wide, and no account recovery vectors to eliminate SIM-swap attack paths.
+      - Centralized logging across all AWS environments and wired CloudWatch alarms to Slack.
+      - Stood up AWS Identity Center from scratch, consolidated IAM across all accounts, and migrated users from static access keys to SSO with least-privilege permission sets.
+      - Created a new AWS organization and enrolled all environments as member accounts.
+      - Drove SOC 1 readiness work including a full user access review, change control process, and Business Associate Agreements with all PHI-handling vendors.
+      - Set up Apple Business Manager and evaluated MDM solutions across device platforms, producing a written proposal covering options, risks, and costs.
   - company: Quartet Health
     from: 05-2021
-    to: present
-    title: Principal Architect
-    blurb: Quartet Health is a company that tries to make getting access to mental health care easier. I started as a DevOps engineer but grew into the role of Principal Architect. That role had me involved in DevOps, systems engineering and administration, IT, and security.
+    to: 08-2025
+    title: Senior DevOps/SRE Engineer
+    blurb: Quartet Health is a digital mental health company. Joined as a DevOps engineer and grew into the de facto owner of infrastructure, security, compliance, and IT as the company scaled and the role demanded more.
     accomplishments:
-      - Managed and maintained Quartet Health's diverse AWS and containerized (Fargate and Kubernetes) environments.
-      - Migrated Quartet's services to EKS that were previously hosted directly on EC2.
-      - Migrated Quartet's services from EKS to Fargate upon realizing that Kubernetes was a bad choice for their infrastructure.
+      - Identified that EKS was creating unsustainable operational burden for a two-person team, made the case to migrate to Fargate, and executed it.
       - Migrated Quartet's aged self-hosted SFTP server setup from a single server to AWS Transfer Family. This resulted in an increase in security for our clients and a reduction in maintenance complexity.
       - Implemented Atlantis for handling Terraform via GitOps.
-      - Created a custom built VPN solution around OpenVPN CE and OneLogin, then later Okta. The result significantly reduced the complexity and cost of the company's VPN setup.
-      - Fully built and automated an Informatica environment via Terraform.
-      - Provided guidance and mentorship for all engineers on best practices regarding AWS, CI/CD methodoligies
-      - Significantly reduced Quartet's AWS costs.
-      - Nurtured and maintained a healthy DevOps based culture that allowed the dev and infra teams to work well together.
+      - Replaced an over-engineered VPN infrastructure with a custom OpenVPN solution when the legacy system failed and couldn't be repaired, reducing operational burden while seamlessly supporting 250+ users.
+      - Fully automated Informatica infrastructure setup via Terraform and EC2 userdata scripts, defying vendor defaults and contractor recommendations by building a maintainable, reproducible environment instead of a manual one-off.
+      - Provided guidance and mentorship for all engineers on best practices regarding AWS, CI/CD methodologies.
+      - Significantly reduced AWS costs, including cutting S3 spend by $5,000/month by reducing standard storage from 1.1PB to 400TB through intelligent tiering and removal of unneeded data.
       - Worked hand-in-hand with the security team to ensure HIPAA and SOC2 compliance for our entire infrastructure.
       - Deployed Darktrace across our entire IT infrastructure (Cloud and individual laptops) for security monitoring purposes.
       - Deployed Rapid7 across our entire IT infrastructure (Cloud and individual laptops) for security monitoring purposes.
-      - Maintained a remote IT support fleet for over 400 remote workers.
-      - Took over and rebuilt the IT support department. Discovered and shut down a laptop theft ring within the company.
+      - Volunteered as interim IT manager during a department transition, discovered and systematically exposed an IT contractor who had been stealing company laptops for over a year, ultimately leading to his termination and an FBI investigation.
       - Migrated the IT Support team's Apple MDM solution from Jamf to Kandji.
       - Migrated the IT Support teams' Windows MDM solution from ConnectWise to Microsoft Intune.
-      - Greatly improved Quartet's IT security posture where it was previously lacking.
-      - Managed Quartet's Google Workspace environment.
-      - Managed Quartet's O365 environment after the migration from Google Workspace.
+      - Served as de facto Google Workspace and O365 administrator, handling everything from user provisioning to security investigations.
       - Managed and maintained Quartet's self-hosted Github Enterprise Environment.
       - Significantly improved the IT department's overall security posture by fully automating updates for all user control machines.
       - Implemented Okta as the company's new SSO platform.
-      - Taught and mentored in the ways for DevOps, systems engineering, security, and IT management. Quartet truly utilized all of my abilities. 
-      - Optimized the entire IT support workflow from users requesting help with issues to those problems getting solved into a faster and more efficient workflow.
-      - Deployed company device asset tracking where they previously had none.
+      - Overhauled the IT support workflow by implementing remote desktop access, streamlining ticket creation, and building a self-service system that routed requests directly to on-call staff via Slack and LogMeIn.
   - company: Voice.com
     from: 09-2020
     to: 05-2021
